@@ -10,11 +10,12 @@ let targetcoco = normalcoco;
 export class App extends Component {
 	constructor(props) {
 		super(props)
-		this.state ={
+		this.state = {
 			selectedCoco: normalcoco
 		}
 	}
 	handleClick = () => {
+		console.log('click')
 		if (targetcoco === brushcoco) {
 			this.setState({
 				selectedCoco: normalcoco
