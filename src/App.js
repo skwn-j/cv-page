@@ -11,7 +11,7 @@ export class App extends Component {
 			selectedCoco: normalcoco
 		}
 	}
-	
+
 	handleClick = () => {
 		console.log('click')
 		if (this.state.selectedCoco === brushcoco) {
@@ -23,7 +23,7 @@ export class App extends Component {
 			this.setState({
 				selectedCoco: brushcoco
 			})
-		} 
+		}
 	}
 
 	render() {
@@ -33,7 +33,8 @@ export class App extends Component {
 					<img src={this.state.selectedCoco} className="coco" alt="coco" width={300} height={300} onClick={this.handleClick} />
 				</header>
 				<div>
-
+					<h1> 정코코 </h1>
+					<h2> Coco Jung </h2>
 				</div>
 			</div>
 		);
