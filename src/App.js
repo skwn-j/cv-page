@@ -29,13 +29,11 @@ export class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<img src={this.state.selectedCoco} className="coco" alt="coco" width={300} height={300} onClick={this.handleClick} />
-				</header>
-				<div>
-					<h1> 정코코 </h1>
-					<h2> Coco Jung </h2>
-				</div>
+				<img src={this.state.selectedCoco} className="coco" alt="coco" width={300} height={300} onClick={this.handleClick} />
+
+				<h1> 정코코 </h1>
+				<h2> Coco Jung </h2>
+
 			</div>
 		);
 	}
